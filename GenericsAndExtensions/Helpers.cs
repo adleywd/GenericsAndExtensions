@@ -41,7 +41,12 @@ namespace GenericsExtensions
             Console.WriteLine($"({functionName}) Person1 == Person2 ? {result}");
         }
 
-        public static string GetFullName(this Person person)
+        public static void WriteFullName(this Person person)
+        {
+            Console.WriteLine(person.GetFullName());
+        }
+
+        private static string GetFullName(this Person person)
         {
             return $"{person.Name} {person.LastName}";
         }

@@ -24,3 +24,5 @@ Helpers.AreTheSame(person1, person2).WriteToConsole("AreTheSame"); // Since the 
 person1.AreTheSameGenericExtension<Person>(person2).WriteToConsole("AreTheSameGenericExtension");
 
 person1.AreTheSameGenericExtension(person2).WriteToConsole("AreTheSameGenericExtension"); // Since the extension is for a variable Typed as Person, you can omit <Person>
+
+person1.WriteFullName();
